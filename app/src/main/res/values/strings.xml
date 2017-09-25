@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Password Checker</string>
+    <string name="strUserID">User ID:</string>
+    <string name="strPwd">Password:</string>
+    <string name="strSuccess">Success</string>
+    <string name="strFailure">Incorrect User ID/Password</string>
+    <string name="strAttempts">No. of Attempts: </string>
+    <string name="strSubmit">Submit</string>
+</resources>

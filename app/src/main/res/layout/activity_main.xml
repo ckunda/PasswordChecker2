@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.cisp362.passwordchecker.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/lblUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:labelFor="@+id/txtUserID"
+        android:text="@string/strUserID"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblPassword"
+        app:layout_constraintRight_toRightOf="@+id/lblPassword"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"/>
+
+    <EditText
+        android:id="@+id/txtUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/strUserID"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblUserID"
+        app:layout_constraintLeft_toLeftOf="@+id/txtPassword"
+        app:layout_constraintRight_toRightOf="@+id/txtPassword"
+        app:layout_constraintTop_toTopOf="@+id/lblUserID"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="87dp"
+        android:labelFor="@+id/txtPassword"
+        android:text="@string/strPwd"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/msgSuccess"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserID"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:text="@string/strPwd"/>
+
+    <TextView
+        android:id="@+id/msgSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="@string/strFailure"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/lblPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <TextView
+        android:id="@+id/txtAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/strAttempts"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/msgSuccess"
+        app:layout_constraintTop_toBottomOf="@+id/msgSuccess"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/strSubmit"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtAttempts"
+        app:layout_constraintTop_toBottomOf="@+id/txtAttempts"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+</android.support.constraint.ConstraintLayout>
