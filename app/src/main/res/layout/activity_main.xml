@@ -99,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="@string/strSubmit"
+        android:text="@string/sgrLogin"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="@+id/txtAttempts"
         app:layout_constraintTop_toBottomOf="@+id/txtAttempts"

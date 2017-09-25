@@ -6,4 +6,5 @@
     <string name="strFailure">Incorrect User ID/Password</string>
     <string name="strAttempts">No. of Attempts: </string>
     <string name="strSubmit">Submit</string>
+    <string name="sgrLogin">Login</string>
 </resources>
