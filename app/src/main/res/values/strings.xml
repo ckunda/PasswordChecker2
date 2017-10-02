@@ -7,4 +7,5 @@
     <string name="strAttempts">No. of Attempts: </string>
     <string name="strSubmit">Submit</string>
     <string name="sgrLogin">Login</string>
+    <string name="strWelcome">Welcome, </string>
 </resources>
